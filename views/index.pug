@@ -1,0 +1,119 @@
+extends layout
+
+block content
+  div.maininfo.overflow
+    div.shortinfo
+    div(style="float: left;")
+      canvas#radar(width="200px", height="200px")
+    div(style="text-align: center;")
+      svg#fillgauge1(width="150px", height="200px")
+    div
+      canvas#step1(width="400px", height="200px")
+    script(src='./javascripts/chartsScript.js')
+    script(src='./javascripts/d3Script.js')
+  div.timelinewrap
+    div.checkout-wrap
+      div.title Печь А1
+      ul.checkout-bar
+        li.ok.visited Загрузка
+          div.after
+        li.ok.visited I Подплавление
+          div.after
+        li.ok.visited I Догрузка
+          div.after
+        li.ok.visited II Подплавление
+          div.after
+        li.ok II Догрузка
+          div.after
+        li.ok  Плавление
+          div.after
+        li.ok  Окисление
+          div.after
+        li.ok Восстановление
+          div.after
+        li.ok.last Разлив 2-х анодов
+          div.after
+    div.checkout-wrap
+      div.title Печь А2
+      ul.checkout-bar
+        li.first.warning.visited Загрузка
+          div.after
+        li.ok.visited I Подплавление
+          div.after
+        li.error I Догрузка
+          div.after
+        li.ok II Подплавление
+          div.after
+        li.ok II Догрузка
+          div.after
+        li.warning Плавление
+          div.after
+        li.error Окисление
+          div.after
+        li.ok Восстановление
+          div.after
+        li.ok.last Разлив 2-х анодов
+          div.after
+    div.checkout-wrap
+      div.title Печь А3
+      ul.checkout-bar
+        li.first.error Загрузка
+          div.after
+        li.error I Подплавление
+          div.after
+        li.error I Догрузка
+          div.after
+        li.warning II Подплавление
+          div.after
+        li.warning II Догрузка
+          div.after
+        li.warning Плавление
+          div.after
+        li.error Окисление
+          div.after
+        li.warning Восстановление
+          div.after
+        li.ok.last Разлив 2-х анодов
+          div.after
+    div.checkout-wrap
+      div.title Печь А4
+      ul.checkout-bar
+        li.visited.first.ok Загрузка
+          div.after
+        li.visited.warning I Подплавление
+          div.after
+        li.visited.warning I Догрузка
+          div.after
+        li.visited.ok II Подплавление
+          div.after
+        li.visited.error II Догрузка
+          div.after
+        li.visited.ok Плавление
+          div.after
+        li.warning Окисление
+          div.after
+        li.ok Восстановление
+          div.after
+        li.error.last Разлив 2-х анодов
+          div.after
+    div.checkout-wrap
+      div.title Печь А5
+      ul.checkout-bar
+        li.visited.first.ok Загрузка
+          div.after
+        li.warning I Подплавление
+          div.after
+        li.warning I Догрузка
+          div.after
+        li.ok II Подплавление
+          div.after
+        li.warning II Догрузка
+          div.after
+        li.ok Плавление
+          div.after
+        li.warning Окисление
+          div.after
+        li.ok Восстановление
+          div.after
+        li.error.last Разлив 2-х анодов
+          div.after
